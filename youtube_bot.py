@@ -4,8 +4,8 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 # LambdaTest Credentials (Replace with your details)
-USERNAME = "your-lambdatest-username"
-ACCESS_KEY = "your-lambdatest-access-key"
+USERNAME = "animeshece1998"
+ACCESS_KEY = "LT_QUs2XEoIOKCcncpP8VWUQXpdrHjS9oW4Qoneeypnb6QR6hW"
 
 # Desired capabilities for Chrome on LambdaTest
 capabilities = {
