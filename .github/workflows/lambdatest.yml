@@ -1,0 +1,26 @@
+name: Run Selenium Bot on LambdaTest
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"  # Runs every 3 hours
+
+jobs:
+  run-selenium:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install selenium
+
+      - name: Run Selenium Bot
+        env:
+          USERNAME: ${{ secrets.LT_USERNAME }}
+          ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
+        run: python your_script.py
