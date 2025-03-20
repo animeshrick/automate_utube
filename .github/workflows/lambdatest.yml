@@ -23,4 +23,4 @@ jobs:
         env:
           USERNAME: ${{ secrets.LT_USERNAME }}
           ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
-        run: python your_script.py
+        run: python youtube_bot.py
